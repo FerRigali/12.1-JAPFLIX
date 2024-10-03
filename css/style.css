@@ -1,0 +1,59 @@
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content{
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+  }
+
+.checked{
+    color: orange;
+}
+
+.offcanvas-top{
+    height: fit-content;
+}
+
+.star-rating {
+    display: inline-block;
+    direction: rtl;  /* Hace que el llenado sea de derecha a izquierda */
+  }
+  
+  .star-rating input {
+    display: none;  /* Ocultamos los input radio */
+  }
+  
+  .star-rating label {
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .star-rating label:before {
+    content: "★";
+  }
+  
+  .star-rating input:checked ~ label {
+    color: #f5c518;  /* Color de las estrellas cuando están seleccionadas */
+  }
+  
+  .star-rating input:hover ~ label {
+    color: #f5c518;  /* Color de las estrellas al pasar el mouse */
+  }
+  
+  #infoDetalles {
+    display: none;
+}
